@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Responsive Email</title>
+
+<style>
+
+body{
+    background-color: brown;
+}
+
+p{
+    font-size: 12px;
+}
+
+.container{
+    margin-top: 0.15%;
+    background-color: white;
+    width: 600px;
+    height: 800px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+.header{
+    margin-top: 0.25%;
+    margin-left: 4%;
+    float: left;
+    width: 90%;
+    height: auto;
+    border-radius: 100em / 100em;
+    border: 2px solid #7E0AEB;
+    padding: 1%;
+}
+
+.logo_section{
+    float: left;
+    width: 20%;
+}
+
+.logo{
+    width: 50%;
+    margin-left: 5%;
+    margin-top: 0%;
+}
+
+.logo_description{
+    float: left;
+    width: 70%;
+}
+
+.logo_title{
+    margin-left: 0%;
+    margin-top:0%;
+    margin-bottom: 0%;
+    font-weight: bold;
+    color: #7E0AEB;
+    font-size: 14px;
+}
+
+.logo_link{
+    margin-top: 2%;
+    color: darkgrey;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.heading{
+    float: left;
+    margin-left: 4%;
+    font-size: 12px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    font-weight: bold;
+}
+
+.expertise{
+    float: left;
+    margin-left: 4%;
+}
+
+.expertise_text{
+    margin: 0%;
+    column-count: 2;
+    margin-right: 3%;
+}
+
+.content_template{
+    float: left;
+    width: 90%;
+    margin-left: 5%;
+    background-color: rgb(241, 241, 241);
+    margin-top: 1%;
+    border-radius: 20px;
+}
+
+.content_template_heading{
+    background-color: #7E0AEB;
+    margin-top: 0%;
+    width: 95%;
+    margin-left: 2.5%;
+    border-radius: 100em/100em;
+    text-align: center;
+    padding: 0px;
+}
+
+.content_heading{
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-left: 3%;
+    color: white;
+    font-size: 12px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    font-weight: bold;
+}
+
+.content_intro{
+    margin-top: 0%;
+    width: 95%;
+    margin-left: 3%;
+    color: #7E0AEB;
+    font-weight: bold;
+}
+
+.content_info{
+    width: 95%;
+    margin-left: 3%;
+}
+
+
+
+@media only screen and (max-width: 550px) {
+    .container{
+        width: 80%;
+        overflow: scroll;
+    }
+    .logo{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 400) {
+    .container{
+        width: 80%;
+        overflow: scroll;
+    }
+    .logo{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 390) {
+    .container{
+        width: 100%;
+        overflow: scroll;
+    }
+    .header{
+        margin-top: 0.5%;
+        margin-left: 0%;
+        float: left;
+        width: 100%;
+        height: auto;
+        border-radius: 100em / 100em;
+        border: 2px solid #7E0AEB;
+        padding: 1%;
+    }
+    .logo_section{
+        float: left;
+        width: 100%;
+    }
+    .logo{
+        width: 100%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+    }
+    .logo_description{
+        float: left;
+        width: 100%;
+    }
+}
+
+
+</style>
+
+</head>
+<body>
+    <div class="container">
+
+        <div class="header">
+            <section class="logo_section">
+                <img class="logo" src="./images/logo.png" alt="logo"/>
+            </section>
+            <section class="logo_description">
+                <p style="margin-top: 2%;" class="logo_title">HEALTHCARE</p>
+                <p class="logo_title">COMMUNICATION PARTNER</p>
+                <a class="logo_link" href="http://www.ijovi.com">&#40Link To The Website&#41</a>
+            </section>
+        </div>  
+ 
+ 
+ 
+ 
+        <p class="heading">OUR EXPERTISE</p>
+        <div class="expertise">
+            
+                <p class="expertise_text">Our focus is on <b>Healthcare Communication.</b> We believe the heart of a brand strategy starts with patient experience. 
+                    Using our individual competencies and skills, coming from industry and academia, we leverage the synergies that are 
+                    generated from our diversity. Our knowledge spans <i> from medicine, market access, molecular,
+                    and human biology, to business and innovation, marketing and strategic communication, health economics and data analytics, to graphic design, 
+                    art and illustrations and motion design.</i></br></br>We work closely with the market access experts at Zealth, providing us the holistic 
+                    understanding of pharma and healthcare.</p>
+        </div>   
+
+        <div class="content_template">
+            <div class="content_template_heading">
+                <p class="content_heading">MARKETING & SALES EXCELLENCE</p>
+            </div>
+            <p class="content_intro"><i>A good brand strategy enables you to identify and utilize your competitive advantage.</i></p>
+            <p class="content_info">Driving demand requires a strategy that is aligned with the specific market, but also operations that follow all the 
+                way through. This requires true understanding of the patient and customer, and tools that support effective execution, 
+                measurement and reporting, and internal engagement. We help you to unlock these opportunities and ensure that every 
+                action you take conveys your brand promise and maximizes the value of your product.</p>
+        </div>
+
+        <div class="content_template">
+            <div class="content_template_heading">
+                <p class="content_heading">INSIGHTS & STRATEGY</p>
+            </div>
+            <p class="content_intro"><i>Today, the customers control what information and communication they want and set their expectations accordingly.</i></p>
+            <p class="content_info">Therefore, the marketing today must be centered on the needs and beliefs of the individual health care professionals or patients. 
+                A holistic approach using omnichannel engagement provides the opportunity to maintain HCP contact conveniently and cost-effectively at a broad scale. 
+                We support you in creating the customer journey that generates a seamless brand experience.</p>
+        </div>
+
+        <div class="content_template">
+            <div class="content_template_heading">
+                <p class="content_heading">DESIGN & COMMUNICATIONGY</p>
+            </div>
+            <p class="content_intro"><i>We help you to identify the most important information for your audience and create visual narratives that inspire your audiences to act.</i></p>
+            <p class="content_info">We have a deep understanding of medical aspects, and we understand the complexity of presenting clinical results. We also create concepts that catch 
+                attention, generate clear understanding, and uphold consistency to create differentiation and recognition of your company. Every single element, be it a chart or an icon, 
+                should contribute towards the business goals. Our combined expertise makes us your ideal Design Partner.</p>
+        </div>
+
+        <div class="content_template">
+            <div class="content_template_heading">
+                <p class="content_heading">MEDICAL AFFAIRS EXCELLENCE</p>
+            </div>
+            <p class="content_intro"><i>We know the importance of adapting communication to your audience.</i></p>
+            <p class="content_info">
+                We know the importance of adapting communication to your audience. Situations such as internal training and patient communication require the ability to make the complexity 
+                of medicine and research understandable and digestible on a non-expert level. When it comes to healthcare professionals, communicating clear and correct content is vital, 
+                since their capacity and time to absorb new information is limited. With our extensive background within medicine, molecular biology, and human biology, from both academic 
+                and industry perspectives, we know how to frame your product propositions in a way that healthcare professionals find relevant and convincing.</p>
+        </div>
+
+    </div>
+</body>
+</html>

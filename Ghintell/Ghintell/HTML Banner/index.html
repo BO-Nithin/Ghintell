@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Banner</title>
+</head>
+
+<style>
+    
+body{
+    background-color: lightblue;
+    height: 100%;
+    width: 100%;
+}
+
+.template{
+    background-color: white;
+    width: 300px;
+    height: 250px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+.container
+{
+   position: relative;
+   display: inline-block;
+   background-color: #f2f2f2;
+   width: 280px;
+   height: 230px;
+   top: 50%;
+   left: 50%;
+   border-radius: 10%;
+   transform: translate(-50%, -50%);
+   -webkit-transform: translate(-50%, -50%);
+}
+
+.img_section{
+    width: 40%;
+    height: 80%;
+    float: left;
+}
+
+.img_container{
+    background-color: white;
+    margin-left: 5%;
+    width:fit-content;
+    padding: 5%;
+    border-radius: 50%;
+    border: 2px solid #7E0AEB;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: fixed;
+    top: 22.5%;
+}
+
+.content_section{
+    width: 60%;
+    height: 80%;
+    float: left;
+}
+
+.content_wrapper{
+    margin-top: 40%;
+    margin-left: 5%;
+}
+
+.title{
+    margin: 0%;
+    font-size:90%;
+    font-weight: bold;
+    color: #7E0AEB;
+}
+
+.link_text{
+    margin-top: 5%;
+    margin-left: 5%;
+    font-style: italic;
+    color: rgb(93, 91, 91);
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.link_content{
+    width: 100%;
+    float: left;
+    height: 20%;
+}
+
+.link_content_text{
+    color: rgb(93, 91, 91);
+    margin-left: 30%;
+    margin-top: 10%;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+.overlay{
+    overflow: scroll;
+    position: absolute;
+    transition: all .3s ease;
+    opacity: 0;
+    background-color: #eee;
+}
+
+.container:hover .overlay{
+    opacity: 1;
+}
+
+.overlayeffect{
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    background-color: #f2f2f2;
+    border-radius: 10%;
+}
+
+.overlay_section{
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 3%;
+    padding: 1%;
+}
+
+.overlay_template{
+    margin-left: 5%; 
+    margin-right: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    scroll-snap-align: start;
+    display: grid;
+    place-items: center;
+    height: 100%;
+}
+
+.overlay_content_heading_template{
+    background-color: #7E0AEB;
+    margin-top: 1%;
+    width: 95%;
+    margin-left: 2.5%;
+    border-radius: 100em/100em;
+    text-align: center;
+}
+
+.overlay_heading{
+    text-align: center;
+    color: white;
+    font-size: 14px;
+}
+
+.overlay_description{
+    text-align: center;
+    font-size: 12px;
+}
+
+a{
+    text-decoration: none;
+}
+
+</style>
+<body>
+   
+    <div class="template">
+
+        <div class="container">
+
+            <section class="img_section">
+                <div class="img_container">
+                    <img src="./images/logo.png" alt="Logo" width="65px" height="65px"/>
+                </div>
+            </section>
+    
+            <section class="content_section">
+                <div class="content_wrapper">
+                    <p class="title">HEALTHCARE</p>
+                    <p class="title">COMMUNICATION</p>
+                    <p class="title">PARTNER</p></br>
+                </div>
+                <a href="https://www.ijovi.com/" class="link_text">&#40Link To The Website&#41</a>
+            </section>
+    
+            <section class="link_content">
+                    <a href="http://www.ijovi.com" class="link_content_text">Click To Learn More</a>
+            </section>
+            <a href="http://www.ijovi.com">
+            <div class="overlay overlayeffect">
+
+                <div class="overlay_template">
+
+                    <section class="overlay_section">
+                        <div class="overlay_content_heading_template">
+                            <p class="overlay_heading">OUR EXPERTISE</p>
+                        </div>
+                        <p class="overlay_description">Our focus is on Healthcare Communication. We believe the heart of a brand strategy starts with patient
+                        experience. Using our individual competencies and skills, coming from industry and academia, we leverage the
+                        synergies that are generated from our diversity. Our knowledge spans from medicine, market access, molecular,
+                        and human biology, to business and innovation, marketing and strategic communication, health economics and
+                        data analytics, to graphic design, art and illustrations and motion design. We work closely with the market access
+                        experts at Zealth, providing us the holistic understanding of pharma and healthcare. </p>
+                    </section>
+
+                    <section class="overlay_section">
+                        <div class="overlay_content_heading_template">
+                            <p class="overlay_heading">MARKETING & SALES EXCELLENCE </p>
+                        </div>
+                        <p class="overlay_description">A good brand strategy enables you to identify and utilize your competitive advantage. Driving demand requires a
+                        strategy that is aligned with the specific market, but also operations that follow all the way through. This requires
+                        true understanding of the patient and customer, and tools that support effective execution, measurement and
+                        reporting, and internal engagement. We help you to unlock these opportunities and ensure that every action you
+                        take conveys your brand promise and maximizes the value of your product </p>
+                    </section>
+
+                    <section class="overlay_section">
+                        <div class="overlay_content_heading_template">
+                            <p class="overlay_heading">INSIGHTS & STRATEGY </p>
+                        </div>
+                        <p class="overlay_description">Today, the customers control what information and communication they want and set their expectations
+                            accordingly. Therefore, the marketing today must be centered on the needs and beliefs of the individual health
+                            care professionals or patients. A holistic approach using omnichannel engagement provides the opportunity to
+                            maintain HCP contact conveniently and cost-effectively at a broad scale. We support you in creating the
+                            customer journey that generates a seamless brand experience. </p>
+                    </section>
+
+                    <section class="overlay_section">
+                        <div class="overlay_content_heading_template">
+                            <p class="overlay_heading">DESIGN & COMMUNICATION </p>
+                        </div>
+                        <p class="overlay_description">We help you to identify the most important information for your audience and create visual narratives that
+                            inspire your audiences to act. We have a deep understanding of medical aspects, and we understand the
+                            complexity of presenting clinical results. We also create concepts that catch attention, generate clear
+                            understanding, and uphold consistency to create differentiation and recognition of your company. Every single
+                            element, be it a chart or an icon, should contribute towards the business goals. Our combined expertise makes us
+                            your ideal Design Partner.  </p>
+                    </section>
+
+                    <section class="overlay_section">
+                        <div class="overlay_content_heading_template">
+                            <p class="overlay_heading">MEDICAL AFFAIRS EXCELLENCE </p>
+                        </div>
+                        <p class="overlay_description">We know the importance of adapting communication to your audience. Situations such as internal training and
+                            patient communication require the ability to make the complexity of medicine and research understandable and
+                            digestible on a non-expert level. When it comes to healthcare professionals, communicating clear and correct
+                            content is vital, since their capacity and time to absorb new information is limited. With our extensive
+                            background within medicine, molecular biology, and human biology, from both academic and industry
+                            perspectives, we know how to frame your product propositions in a way that healthcare professionals find
+                            relevant and convincing.</p>
+                    </section>
+
+                </div>
+
+            </div>
+            </a>
+        </div>
+    </div>
+    
+
+</body>
+</html>
